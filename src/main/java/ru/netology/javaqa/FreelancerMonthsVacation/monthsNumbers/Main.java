@@ -1,7 +1,5 @@
 package ru.netology.javaqa.FreelancerMonthsVacation.monthsNumbers;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         MonthsNumberService calculation = new MonthsNumberService();
