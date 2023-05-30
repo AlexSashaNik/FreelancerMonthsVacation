@@ -1,6 +1,6 @@
 package ru.netology.javaqa.FreelancerMonthsVacation.monthsNumbers;
 
-public class MonthsNumberService {
+public class MonthsNumberCalc {
     public int calculation(int income, int expenses, int threshold) {
         int numberOfMonths = 0; //количество свободных месяцев
         int currentSum = 0; //начальная сумма на счету
@@ -15,10 +15,11 @@ public class MonthsNumberService {
                 //Если сумма на счету больше threshold, то фрилансер не работает, количество месяцев увеличивается на 1,
                 // из суммы на счету вычитаются expenses и сумма уменьшается в 3 раза - траты на отдых
                 currentSum = (currentSum - expenses) / 3;
-
             }
         }
+
         return numberOfMonths;
     }
-
 }
+
+
